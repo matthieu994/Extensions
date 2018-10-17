@@ -1,0 +1,22 @@
+{
+	"name": "SpotiKeys",
+	"version": "1.0",
+	"description": "A dumb Spotify extension for Chrome.",
+	"icons": {
+		"32": "icon.png",
+		"64": "icon.png",
+		"128": "icon.png"
+	},
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
+	"permissions": ["activeTab", "tabs", "http://*/*", "https://*/*", "background"],
+	"content_scripts": [
+		{
+			"matches": ["https://open.spotify.com/*"],
+			"css": ["popup.css"],
+			"js": ["script.js"]
+		}
+	],
+	"manifest_version": 2
+}
