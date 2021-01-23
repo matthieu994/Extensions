@@ -1,0 +1,26 @@
+{
+  "name": "Better Recipes",
+  "version": "0.1",
+  "description": "Your recipes. But better. Displays quantity corresponding to each ingredient in the recipe instructions.",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": {
+      "160": "icon.png"
+    },
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+    "160": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
